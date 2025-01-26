@@ -560,8 +560,8 @@ body {
 /* From Uiverse.io by ayman-ashine */ 
 .card {
   position: relative;
-  width: 195px;
-  height: 285px;
+  width: 200px;
+  height: 300px;
   background: #eb957b;
   border-radius: 20px;
   display: flex;
@@ -576,13 +576,20 @@ body {
 
 .card:hover .img {
   top: 30%;
-  transform: translate(-50%, -50%) scale(0.8);
+/*  transform: translate(-50%, -50%);*/
+}
+.tgic {
+  scale: 1;
+  position: relative;
+  top: 75px;
+  left: 64px;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
 }
 .card:hover .tgic {
   align-items: center;
-  scale: 0.2;
-  top: 2%;
-  left: 25%;
+  top: 10px;
+  scale: 1;
 }
 .card:hover .textBox {
   bottom: 0;
@@ -644,11 +651,3 @@ body {
   transform: scale(1.04);
 }
 
-.tgic {
-  scale: 0.25;
-  position: relative;
-  top: 20%;
-  left: 32%;
-  transform: translate(-50%, -50%);
-  transition: all 0.3s ease;
-}
